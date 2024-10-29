@@ -23,7 +23,11 @@ const resetGame = () => {
     count = 0;
     enableBoxes();
     msgContainer.classList.add("hide");
+    boxes.forEach((box) => {
+        box.classList.remove("clicked"); 
+    });
 };
+
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
@@ -34,6 +38,7 @@ boxes.forEach((box) => {
     } else {
       //playerX
         box.innerText = "X";
+        box.classList.add("clicked");
         turnO = true;
     }
     box.disabled = true;
