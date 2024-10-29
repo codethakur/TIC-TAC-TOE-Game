@@ -6,6 +6,8 @@
 body{
   background-color: #393B3D;
   text-align: center;
+  color: aqua;
+
 }
 .container{
   height: 70vh;
@@ -33,9 +35,10 @@ body{
   font-size: 8vmin;
   color: #ffffc7;
   background-color: #151719;
+  cursor: pointer;
 
 }
-#reset-btn{
+#reset-btn, #new-btn{
   padding: 1rem;
   font-size: 1.25rem;
   background-color: #151719;
@@ -43,7 +46,10 @@ body{
   border-radius: 1rem;
   border: none;
   box-shadow: 0 0 1rem #0B0C0E;
+  cursor: pointer;
+  
 }
+
 
 #reset-btn::after {
   transform: translate(10px, 10px);
